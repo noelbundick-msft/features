@@ -48,10 +48,18 @@
           "default": "latest"
         }
       },
+      "extensions": [
+        "ms-kubernetes-tools.vscode-kubernetes-tools"
+      ],
       "include": [
         "docker-from-docker",
         "docker-in-docker"
       ]
+    },
+    {
+      "id": "debug",
+      "name": "Devcontainer feature debugging",
+      "options": {}
     }
   ]
 }
