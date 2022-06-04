@@ -80,15 +80,15 @@ fi
 
 if [ ! -z "${_BUILD_ARG_PLATFORM_OPS}" ]; then
   # k3d
-  if [ "${_BUILD_ARG_PLATFORM_OPS_K3D_VERSION}" != "latest" ]; then
-    export TAG="${_BUILD_ARG_PLATFORM_OPS_K3D_VERSION}"
+  if [ "${_BUILD_ARG_PLATFORM_OPS_K3DVERSION}" != "latest" ]; then
+    export TAG="${_BUILD_ARG_PLATFORM_OPS_K3DVERSION}"
   fi
   curl -s "https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh" | bash
   # TODO: autocomplete
 
   # Flux
-  if [ "${_BUILD_ARG_PLATFORM_OPS_FLUX_VERSION}" != "latest" ]; then
-    export FLUX_VERSION="${_BUILD_ARG_PLATFORM_OPS_FLUX_VERSION}"
+  if [ "${_BUILD_ARG_PLATFORM_OPS_FLUXVERSION}" != "latest" ]; then
+    export FLUX_VERSION="${_BUILD_ARG_PLATFORM_OPS_FLUXVERSION}"
   fi
   curl -s https://fluxcd.io/install.sh | sudo bash
   chmod +x /usr/local/bin/flux
