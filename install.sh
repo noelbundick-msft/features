@@ -68,7 +68,6 @@ if [ ! -z "${_BUILD_ARG_K3D}" ]; then
     export TAG="${_BUILD_ARG_K3D_VERSION}"
   fi
   curl -s "https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh" | bash
-  k3d cluster create
 fi
 
 if [ ! -z "${_BUILD_ARG_DEBUG}" ]; then
