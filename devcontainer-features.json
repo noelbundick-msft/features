@@ -60,6 +60,27 @@
       "id": "debug",
       "name": "Devcontainer feature debugging",
       "options": {}
+    },
+    {
+      "id": "platform-ops",
+      "name": "Installs recommended platform ops tools",
+      "options": {
+        "k3d-version": {
+          "type": "string",
+          "default": "latest"
+        },
+        "flux-version": {
+          "type": "string",
+          "default": "latest"
+        }
+      },
+      "extensions": [
+        "ms-kubernetes-tools.vscode-kubernetes-tools"
+      ],
+      "include": [
+        "docker-from-docker",
+        "docker-in-docker"
+      ]
     }
   ]
 }
