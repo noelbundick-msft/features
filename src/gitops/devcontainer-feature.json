@@ -1,0 +1,29 @@
+{
+  "name": "GitOps dev tools",
+  "id": "gitops",
+  "version": "0.0.1",
+  "description": "Tools for developing with Kubernetes and GitOps",
+  "options": {
+    "gitops": {
+      "type": "string",
+      "enum": [
+        "flux"
+      ],
+      "default": "flux",
+      "description": "Preferred GitOps toolchain."
+    },
+    "cluster": {
+      "type": "string",
+      "enum": [
+        "k3d"
+      ],
+      "default": "k3d",
+      "description": "Preferred k8s development environment."
+    }
+  },
+  "entrypoint": "/usr/local/share/gitops-init.sh",
+  "installsAfter": [
+    "docker-in-docker",
+    "docker-from-docker"
+  ]
+}

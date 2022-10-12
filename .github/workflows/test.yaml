@@ -13,7 +13,8 @@ jobs:
       matrix:
         features: [
            "color",
-           "hello"
+           "hello",
+           "gitops"
         ]
         baseImage:
           [
