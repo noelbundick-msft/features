@@ -7,9 +7,9 @@ A hello world feature
 
 ```json
 "features": {
-        "ghcr.io/devcontainers/feature-template/hello:1": {
-            "version": "latest"
-        }
+    "ghcr.io/noelbundick-msft/features/hello:1": {
+        "version": "latest"
+    }
 }
 ```
 
@@ -23,4 +23,4 @@ A hello world feature
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-template/blob/main/src/hello/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/noelbundick-msft/features/blob/main/src/hello/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
